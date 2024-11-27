@@ -1,0 +1,38 @@
+{
+  "name": "home-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:push": "npx prisma db push --schema src/shared/lib/prisma/schema",
+    "postinstall": "prisma generate --schema src/shared/lib/prisma/schema",
+    "prisma:studio": "prisma studio --schema src/shared/lib/prisma/schema"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.9",
+    "@prisma/client": "^5.22.0",
+    "next": "15.0.3",
+    "prisma": "^5.22.0",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.9",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "typescript": "^5"
+  }
+}
